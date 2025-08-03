@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from database.database import load_all_tenders
+from src.database.database import load_all_tenders
 
 app = FastAPI()
 
