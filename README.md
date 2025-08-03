@@ -84,7 +84,7 @@ python main.py --max 50 --format csv --output data/my_tenders.csv
 ### Запуск API
 
 ```bash
-uvicorn api:app --reload
+uvicorn src.api:app --reload
 ```
 
 API будет доступен по адресу: `http://127.0.0.1:8000`
