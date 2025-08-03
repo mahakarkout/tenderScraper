@@ -2,8 +2,8 @@ import argparse
 import csv
 import json
 from typing import List, Dict
-from scraper.tender_scraper import scrape_all_tenders
-from database.database import init_db, save_to_db
+from src.scraper.tender_scraper import scrape_all_tenders
+from src.database.database import init_db, save_to_db
 
 # Save to JSON file
 def save_to_json(data: List[Dict], filename: str):
