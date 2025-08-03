@@ -1,6 +1,6 @@
 # TenderScraper
 
-TenderScraper — инструмент для веб-скрапинга, который извлекает информацию о тендерах с сайта [rostender.info](https://rostender.info) и предоставляет данные через REST API на базе FastAPI.
+TenderScraper — инструмент для веб-скрапинга, который извлекает информацию о тендерах с сайта [rostender.info](https://rostender.info/extsearch) и предоставляет данные через REST API на базе FastAPI.
 
 ## Возможности
 
@@ -119,7 +119,9 @@ GET http://127.0.0.1:8000/tenders
 
 - Swagger UI с эндпоинтом `/tenders`
 ### Интерфейс Swagger
-![Swagger UI](data\swagger.png)
+![Swagger UI]
+<img width="2528" height="1326" alt="swagger" src="https://github.com/user-attachments/assets/4bdff794-c773-4533-aa2f-05e3fb6f832c" />
+
 
 ## Возможные улучшения
 
