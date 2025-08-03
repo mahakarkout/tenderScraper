@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+lxml
+pandas
+fastapi
+uvicorn
+tqdm
+fastapi
+sqlalchemy
+aiosqlite
