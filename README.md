@@ -118,7 +118,7 @@ GET http://127.0.0.1:8000/tenders
 ## Скриншоты
 
 - Swagger UI с эндпоинтом `/tenders`
-### Интерфейс Swagger
+### Интерфейс Swagger (http://127.0.0.1:8000/docs)
 ![Swagger UI]
 <img width="2528" height="1326" alt="swagger" src="https://github.com/user-attachments/assets/4bdff794-c773-4533-aa2f-05e3fb6f832c" />
 
