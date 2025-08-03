@@ -1,0 +1,14 @@
+# Virtual environment
+MyEnv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+*.env
