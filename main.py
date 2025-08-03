@@ -5,12 +5,12 @@ from typing import List, Dict
 from src.scraper.tender_scraper import scrape_all_tenders
 from src.database.database import init_db, save_to_db
 
-# Save to JSON file
+# Сохранить в файл JSON
 def save_to_json(data: List[Dict], filename: str):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-# Save to CSV file
+# Сохранить в файл CSV
 def save_to_csv(data: List[Dict], filename: str):
     if not data:
         return
@@ -20,7 +20,7 @@ def save_to_csv(data: List[Dict], filename: str):
         writer.writeheader()
         writer.writerows(data)
 
-# Main CLI entry point
+# Основная точка входа CLI 
 def main():
     parser = argparse.ArgumentParser(description="Scrape tenders from rostender.info")
     parser.add_argument("--max", type=int, default=100, help="Maximum number of tenders to scrape")
@@ -36,11 +36,11 @@ def main():
     tenders = scrape_all_tenders(args.max)
     print(f"Scraped {len(tenders)} tenders.")
 
-    # Save to DB
+    # Сохранить в БД
     print("Saving to database...")
     save_to_db(tenders)
 
-    # Save to file (json/csv)
+    # Сохранить в файл (json/csv)
     if args.format == "json":
         save_to_json(tenders, args.output)
     else:

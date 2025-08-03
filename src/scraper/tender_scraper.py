@@ -65,13 +65,13 @@ def scrape_all_tenders(max_tenders: int = 100) -> List[Dict]:
         tenders = parse_tenders(html)
 
         if not tenders:
-            break  # No more pages
+            break  # Больше нет страниц
 
         remaining = max_tenders - len(all_tenders)
         all_tenders.extend(tenders[:remaining])
 
         if len(tenders) < 20:
-            break  # Last page likely reached
+            break  # Последняя страница, вероятно, достигнута
 
         page += 1
 
